@@ -1,0 +1,165 @@
+
+
+
+ * {
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+    background: 
+     linear-gradient(337deg,#b4b415,rgb(225, 135, 10));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    background: rgb(0, 0, 157);
+    padding: 0.5vh;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    gap: 0.5vh;
+  }
+  
+  .grid > div {
+    height: min(4vh, 7vw);
+    width: min(4vh, 7vw);
+    background-color: rgba(103, 255, 8, 0.2);
+    border-radius: 0.3vh;
+  }
+  
+  .grid > .O {
+    background: rgb(128, 0, 255);
+  }
+  
+  .grid > .J {
+    background: rgb(0, 239, 108);
+  }
+
+  .grid > .L {
+    background: rgb(153, 199, 14);
+  }
+
+  .grid > .I {
+    background: rgb(199, 14, 159);
+  }
+
+  
+
+  .grid > .T {
+    background: rgb(239, 0, 151);
+  }
+
+
+  .grid >.S {
+    background-color: rgb(212, 41, 41);
+}
+
+.grid > .Z {
+    background-color: rgb(109, 206, 146);
+}
+  
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.485);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-restart{
+  width: 300px;
+  height: 200px;
+  background: 
+      linear-gradient(320deg, #b4d415, rgb(230, 81, 7));
+  border-radius: 20px;
+  border: none;
+  font-size: 55px;
+  box-shadow: 0px 2px 10px 10px #000;
+  cursor: pointer;
+  margin-top: 100px;
+}  
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.result {
+  border: 2px black;
+  border-radius: 20px;
+  width: 25vh;
+  height: 10vh;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 2px;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 56px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dotted black;
+  border-radius: 20px;
+  background-color: rgba(62, 9, 62, 0.118);
+  width: 35vh;
+  height: 30vh;
+  box-shadow: 1px 1px 1px 2px rgb(45, 7, 45);
+  user-select: none;
+}
+
+
+
+
+
+.timer {
+  margin: 10px auto 10px auto;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.newgame {
+  background-color: rgb(147, 3, 83);
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10%;
+  font-size: medium;
+  cursor: pointer;
+  border: none;
+}
+
+.newgame:hover {
+  background: 
+      linear-gradient(320deg, #d1d415, rgb(230, 7, 85));
+  color: white;
+  transform: scale(1.1);
+}
+
+.level{
+  text-align: center;
+}
+
+
+
+
+
+
+
